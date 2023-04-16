@@ -6,10 +6,9 @@
 
 2.[VS_code_IDE](https://code.visualstudio.com/)
 
-3.[Heroku_Account](https://www.heroku.com/)
+3.[Git](https://git-scm.com/)
 
-4.[Git](https://git-scm.com/)
-
+4.Cloud Platform
 
 create a new environment
 
