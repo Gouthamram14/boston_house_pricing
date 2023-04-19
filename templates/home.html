@@ -1,72 +1,104 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<style>
-.login {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #f2efef;
-  padding: 20px;
-  border-radius: 5px;
-}
+  <title>Boston House Price Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+    }
 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #5639c9;
-  border-radius: 4px;
-}
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
-input[type=submit] {
-  background-color: #26d95f;
-  color: rgb(50, 249, 15);
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-input[type=submit]:hover {
-  background-color: #2ee737;
-}
-.output {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 20px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: #b6cefe;
-}
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
 
-.result {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
+    input {
+      box-sizing: border-box;
+      width: 35%;
+      margin-bottom: 7px;
+      margin-left: 100px;
+      margin-right: 30px;
+      padding: 10px;
+      border: 2px solid #5133c8;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: "Hind", sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+      transition: all 0.3s ease-in-out;
+    }
 
+    input:focus {
+      outline: none;
+      background-color: #7bbef940;
+    }
 
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-left: 400px;
+      margin-right: 400px;
+      border: solid;
+      border-radius: 15px;
+      font-size: 25px;
+      font-family: "Lucida Console", "Courier New", monospace;
+      background-color: #422afabd;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      
+    }
 
-</style>
+    button:hover {
+      background-color: #0654fdd2;
+    }
+
+    .output {
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  </style>
 
   
 </head>
 
 <body>
+  
  <div class="login">
 	<h1>Boston House Price Prediction</h1>
 
@@ -98,8 +130,7 @@ input[type=submit]:hover {
  </div>
  
  <div class="output">
-   <h2>Prediction : </h2>
-   <h3> {predicted_output} </h3>
+   <h3> {{predicted_output}} </h3>
  </div>
 
 
