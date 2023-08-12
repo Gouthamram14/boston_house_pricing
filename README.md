@@ -4,6 +4,8 @@ Successfully completed a machine learning project focused on predicting house pr
 Applied linear regression techniques to analyze and model the relationship between various features and house prices.
 Gained proficiency in data preprocessing, feature selection, and building a regression model to predict continuous target variables.
 Demonstrated practical experience in utilizing Python libraries such as pandas,numpy,sklearn etc to implement and evaluate a machine learning model for real-world predictions.
+
+
 **Data Set Characteristics:**  
 
     :Number of Instances: 506 
